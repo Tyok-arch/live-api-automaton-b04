@@ -17,6 +17,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: Reports
+
     steps:
 
       - name: Checkout project
@@ -37,9 +41,7 @@ jobs:
             ${{ runner.os }}-m2
 
       - name: Build project
-        working-directory: Reports
         run: mvn clean compile
 
       - name: Run tests
-        working-directory: Reports
         run: mvn test
