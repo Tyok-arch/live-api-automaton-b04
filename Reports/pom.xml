@@ -92,7 +92,7 @@
                     <suiteXmlFiles>
 
                         <suiteXmlFile>
-                            runner/testng.xml
+                            src/test/java/runner/testng.xml
                         </suiteXmlFile>
 
                     </suiteXmlFiles>
